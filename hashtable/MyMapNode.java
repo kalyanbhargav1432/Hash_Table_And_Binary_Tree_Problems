@@ -44,8 +44,6 @@ public class MyMapNode<K, V> implements INode<K> {
 		if (next != null)
 			myMapNodeString.append("->").append(next);
 		return myMapNodeString.toString();
-
 	}
 
-	
 }

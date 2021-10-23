@@ -21,7 +21,7 @@ public class MyHashMapTest {
 		}
 		int frequency = myHashMap.get("paranoid");
 		System.out.println(myHashMap);
-		System.out.println("Frequency of word(paranoid) is " + frequency);
+		System.out.println("Frequency of word(paranoid) " + frequency);
 		Assert.assertEquals(3, frequency);
 	}
 }

@@ -1,5 +1,4 @@
 package hashtable;
-
 import java.util.ArrayList;
 
 public class MyHashMap<K, V> {
@@ -43,14 +42,6 @@ public class MyHashMap<K, V> {
 		} else {
 			myMapNode.setValue(value);
 		}
-	}
-
-	public void delete(K key) {
-		int index = this.getBucketIndex(key);
-		MyLinkedList<K> myLinkedList = this.myBucketArray.get(index);
-		MyMapNode<K, V> myMapNode = (MyMapNode<K, V>) myLinkedList.search(key);
-		myLinkedList.delete(key);
-		myBucketArray.remove(index);
 	}
 
 	@Override

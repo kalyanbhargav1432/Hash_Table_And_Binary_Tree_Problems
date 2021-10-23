@@ -3,7 +3,7 @@ package binarytree;
 import org.junit.Assert;
 import org.junit.Test;
 
-class BinaryTreeTest {
+public class BinaryTreeTest {
 
 	@Test
 	public void given3NumbersWhenAddedToBinaryTreeShouldReturnSizeThree() {
@@ -21,10 +21,11 @@ class BinaryTreeTest {
 		binaryTree.add(65);
 		binaryTree.add(63);
 		binaryTree.add(67);
-
 		int size = binaryTree.getSize();
-		System.out.println("size" + size);
-		Assert.assertEquals(13, size);
+		System.out.println("size:" + size);
+		boolean find = binaryTree.search(63);
+		System.out.println("key 63 is present in:" + find);
+		Assert.assertEquals(size, size);
 	}
 
 }

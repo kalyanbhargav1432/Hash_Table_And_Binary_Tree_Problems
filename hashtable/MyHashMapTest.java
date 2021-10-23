@@ -3,10 +3,10 @@ package hashtable;
 import org.junit.Assert;
 import org.junit.Test;
 
-class MyHashMapTest {
+public class MyHashMapTest {
 
 	@Test
-	public static void gitvenASentence_WhenWordAreAddToList_ShoudReturnWordFrequency() {
+	public  void gitvenASentence_WhenWordAreAddToList_ShoudReturnWordFrequency() {
 		String sentence = "Paranoids are not paranoid because they are paranoid but because"
 				+ "they keep putting themselves deliberately into paranoid avoidable situations";
 		MyHashMap<String, Integer> myHashMap = new MyHashMap<>();
@@ -22,6 +22,6 @@ class MyHashMapTest {
 		int frequency = myHashMap.get("paranoid");
 		System.out.println(myHashMap);
 		System.out.println("Frequency of word(paranoid) is " + frequency);
-		Assert.assertEquals(2, frequency);
+		Assert.assertEquals(3, frequency);
 	}
 }

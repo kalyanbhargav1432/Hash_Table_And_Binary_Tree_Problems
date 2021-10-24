@@ -22,7 +22,7 @@ public class MyHashMapTest {
 		System.out.println(myHashMap);
 		myHashMap.delete("putting");
 		System.out.println("\n Hash Map after deleting word (putting)");
+		Assert.assertEquals(0, 0);
 		System.out.println(myHashMap);
-		Assert.assertEquals(14, 14);
 	}
 }
